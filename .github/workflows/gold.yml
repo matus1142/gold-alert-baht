@@ -25,7 +25,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
-        run: python check_gold.py
+        run: python gold_alert.py
 
       - name: Commit state
         run: |
